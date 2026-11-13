@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingBottom="10dp"
+            android:text="checking"
+            android:textColor="#9FB3C8"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/groqKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Groq API key (gsk_...)"
+            android:importantForAutofill="no"
+            android:inputType="textVisiblePassword"
+            android:textColor="@color/text"
+            android:textColorHint="#7A889B" />
+
+        <Button
+            android:id="@+id/btnSaveKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="រក្សាទុក Groq key" />
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="សិទ្ធិ Overlay" />
+        <Button
+            android:id="@+id/btnAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="បើក Accessibility" />
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ចាប់ផ្ដើម AI overlay" />
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="បញ្ឈប់ overlay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="បញ្ជា: បើក tiktok អូស 20 · OPEN:tiktok SCROLL:20"
+            android:textColor="#7A889B"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>
